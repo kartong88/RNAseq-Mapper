@@ -5,3 +5,19 @@ To align a RNA-seq dataset towards a reference genome, it is often necessary to 
 
 To improve the accuracy of variant detection and of mapping, we took an alternative approach by using a highly accurate mapper (BWA/BWA-MEM) to map the RNA-seq datasets to a human genome in combination with a spliced junction database. Outline here is the overall methodology for performing such an alignment together with some of my code for the entire pipeline.
 
+## Overview
+This is the code for the RNA-seq aligner using a hg19 reference genome
+as well as a junction database of sequences
+
+
+## Pipeline overview
+The pipeline can be divided into a few parts
+
+1. Generation of a junction database sequences based on known annotations (UCSC, ENSEMBL, GENECODE, Refseq).
+
+2. Alignment of RNA-seq data to hg19+junction_database reference fasta file concurrently.
+
+3. Conversion of junction mapped reads onto hg19 coordinates.
+
+4. Selection of best pair among the reads.
+
