@@ -21,3 +21,4 @@ The pipeline can be divided into a few parts
 
 4. Selection of best pair among the reads.
 
+(Only code for Part 1 is provided. Please contact me if you need the cope of Parts 3 and 4.)
